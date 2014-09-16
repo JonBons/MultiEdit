@@ -18,7 +18,7 @@ namespace MultiPointEdit
             var commandFilter = wpfTextView.Properties.GetProperty<MultiPointEditCommandFilter>(typeof(MultiPointEditCommandFilter));
             if (commandFilter != null)
             {
-                commandFilter.HandleClick(Keyboard.IsKeyDown(Key.LeftAlt) || Keyboard.IsKeyDown(Key.RightAlt));
+                commandFilter.HandleClick(Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl));
             }
         }
 
